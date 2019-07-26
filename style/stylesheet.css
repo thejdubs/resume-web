@@ -1,3 +1,19 @@
+:root {
+	--bg-color: rgb(41, 41, 41);
+	--main-txt-color: rgb(214, 214, 214);
+	--h-and-f-bg-color: #111;
+	--header-hover-color: rgb(55, 55, 55);
+	--footer-txt-color: #999;
+}
+
+[data-theme="light"] {
+    --bg-color: rgb(229, 229, 229);
+	--main-txt-color: rgb(33, 33, 33);
+	--h-and-f-bg-color: rgb(255,255,255);
+	--header-hover-color: rgb(230, 230, 230);
+	--footer-txt-color: #999;
+}
+
 .navbodywrap 
 {
 	min-height: 100%;
@@ -14,34 +30,33 @@
 	font-family: "Arial";
 	margin-top: 0;
 	padding: 0;
-	background-color: #111;
+	background-color: var(--h-and-f-bg-color);
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 74px;
-	box-shadow: 2px 2px 1px rgb(41, 41, 41);
 }
 .headerElement
 {
 	font-size: 14px;
 	float: right;
 	display: block;
-	color: rgb(214, 214, 214);
+	color: var(--main-txt-color);
 	text-align: center;
-	padding: 20px;
+	padding: 15px;
 	padding-bottom: 28px;
 	padding-top: 30px;
 	text-decoration: none;
 }
 .headerElement:hover
 {
-	background-color: rgb(55, 55, 55);
+	background-color: var(--header-hover-color);
 }
 .name
 {
 	font-size: 32px;
 	float: left;
-	color: rgb(214, 214, 214);
+	color: var(--main-txt-color);
 	text-align: center;
 	padding-top: 20px;
 	padding-left: 24px;
@@ -56,9 +71,9 @@
 	padding-bottom: 10px;
 	padding-right: 8px;
 	height: 18px;
-	color: #999;
-	background-color: #111;
-	bottom: -33;
+	color: var(--footer-txt-color);
+	background-color: var(--h-and-f-bg-color);
+	bottom: -34;
 }
 /*--------------------------------------------------- PRESET CSS -------------------------------------------------------------------------------------------*/
 body, h1, h2, h3, h4, h5, h6, p {
@@ -70,12 +85,12 @@ body {
 	/* background-image:url(images/topLine.png); */
 	background-position:left top;
 	background-repeat:repeat-x;
-	background-color:rgb(41, 41, 41);
+	background-color: var(--bg-color);
 	background-attachment:scroll;
 	background-size:auto;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
-	color:rgb(214, 214, 214);
+	color: var(--main-txt-color);
 }
 h1 {
 	font-family:Arial, Helvetica, sans-serif;
@@ -196,4 +211,63 @@ td {
 	padding: 0px;
 	background: transparent;
     cursor:pointer;
+}
+
+
+/*--------------------------------------------------- LightMode Switch -----------------------------------------------------------------------------------------*/
+/*Simple css to style it like a toggle switch*/
+.switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+}
+
+.switch input {
+	display:none;
+}
+
+.slider {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+}
+
+.slider:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 26px;
+}
+
+input:checked + .slider {
+	background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.sliderElement
+{
+	padding-top: 20px;
+	padding-right: 8px;
+	float: right;
 }
