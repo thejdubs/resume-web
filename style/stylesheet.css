@@ -7,7 +7,7 @@
 }
 
 [data-theme="light"] {
-    --bg-color: rgb(229, 229, 229);
+	--bg-color: rgb(246,246,246);
 	--main-txt-color: rgb(33, 33, 33);
 	--h-and-f-bg-color: rgb(255,255,255);
 	--header-hover-color: rgb(230, 230, 230);
@@ -95,36 +95,36 @@ body {
 h1 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:24px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h2 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:22px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h3 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:20px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h4 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h5 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h6 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
-	color:#333432;
+	color: var(--main-txt-color);
 }
 h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 6px;
-	border-bottom: 1px solid #1A1A1A;
+	border-bottom: 1px solid var(--main-txt-color);
 }
 a img {
 	border: 0 solid;
@@ -149,7 +149,7 @@ ol {
 	padding-left: 23px;
 }
 hr {
-	border-top: 1px solid #ced0cc
+	border-top: 1px solid var(--main-txt-color);
 }
 table {
 	border-collapse: collapse;
@@ -158,11 +158,11 @@ table {
 th {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
-	background:#f0f0f0;
+	background: var(--bg-color);
 	border-width:1px;
 	border-style:solid;
 	border-color:#dbdbdb;
-	color:#5c5c5c;
+	color: var(--main-txt-color);
 	padding:6px;
 }
 td {
@@ -171,8 +171,8 @@ td {
 	/* CHANGED background:#f8f8f8; */
 	border-width:0px;
 	border-style:solid;
-	border-color:#dbdbdb;
-	color:#5c5c5c;
+	border-color: var(--main-txt-color);
+	color: var(--main-txt-color);
 	padding:1px;
 }
 /*--------------------------------------------------- COMMON USAGE CSS -------------------------------------------------------------------------------------------*/
@@ -208,7 +208,7 @@ td {
 	border-color: currentcolor;
 	width: 259px;
 	margin-right: 10px;
-	padding: 0px;
+	padding-top: 10px;
 	background: transparent;
 	cursor:pointer;
 	float:left;
