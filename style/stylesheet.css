@@ -184,3 +184,16 @@ td {
 .tableCell {
 	display: table-cell
 }
+
+/*--------------------------------------------------- Random -----------------------------------------------------------------------------------------*/
+
+.headshot {
+	max-width: 100%;
+	border: 0px solid;
+	border-color: currentcolor;
+	width: 259px;
+	margin-right: 10px;
+	padding: 0px;
+	background: transparent;
+    cursor:pointer;
+}
