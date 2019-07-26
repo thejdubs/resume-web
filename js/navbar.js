@@ -8,7 +8,6 @@ function NavigationBar()
 	document.write("	<a class = headerElement HREF=\"education.html\">EDUCATION</a>")	
 	document.write("	<a class = headerElement HREF=\"experience.html\">EXPERIENCE</a>")
 	document.write("	<a class = headerElement HREF=\"home.html\">HOME</a>")
-	
 	document.write("</div><br><br><br><br>")
 }
 
