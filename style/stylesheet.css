@@ -4,6 +4,7 @@
 	--h-and-f-bg-color: #111;
 	--header-hover-color: rgb(55, 55, 55);
 	--footer-txt-color: #999;
+	--hyper-color: cyan;
 }
 
 [data-theme="light"] {
@@ -12,6 +13,7 @@
 	--h-and-f-bg-color: rgb(255,255,255);
 	--header-hover-color: rgb(230, 230, 230);
 	--footer-txt-color: #999;
+	--hyper-color: blue;
 }
 
 .navbodywrap 
@@ -91,6 +93,9 @@ body {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:18px;
 	color: var(--main-txt-color);
+}
+a {
+	color: var(--hyper-color);
 }
 h1 {
 	font-family:Arial, Helvetica, sans-serif;
