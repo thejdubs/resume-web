@@ -77,6 +77,54 @@
 	background-color: var(--h-and-f-bg-color);
 	bottom: -34;
 }
+#toc_container {
+    background: var(--h-and-f-bg-color) none repeat scroll 0 0;
+    /* border: 1px solid var(--main-txt-color); */
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outside none none !important;
+}
+
+.tab { margin-left:40px }
+
+.box {
+	float: left;
+	height: 20px;
+	width: 20px;
+	/* margin-bottom: 15px; */
+	/* border: 1px solid black; */
+	clear: both;
+  }
+  .red {
+	background-color: red;
+  }
+  .orange {
+	background-color: orange;
+  }
+  .yellow {
+	background-color: yellow;
+  }
+  .green {
+	background-color: green;
+  }
+  .blue {
+	background-color: blue;
+  }
+  .purple {
+	background-color: cyan;
+  }
+
 /*--------------------------------------------------- PRESET CSS -------------------------------------------------------------------------------------------*/
 body, h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
@@ -102,6 +150,14 @@ h1 {
 	font-size:24px;
 	color: var(--main-txt-color);
 }
+h1::before { 
+	display: block; 
+	content: " "; 
+	margin-top: -100px; 
+	height: 100px; 
+	visibility: hidden; 
+	pointer-events: none;
+  }
 h2 {
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:22px;
